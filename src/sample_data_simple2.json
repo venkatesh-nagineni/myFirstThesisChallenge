@@ -1,0 +1,97 @@
+{
+    "renderer": "global",
+    "name": "edge",
+    "nodes": [
+      {
+        "renderer": "region",
+        "name": "INTERNET",
+        "class": "normal"
+      },
+      {
+        "renderer": "region",
+        "name": "us-east-2",
+        "maxVolume": 20000,
+        "class": "normal",
+        "updated": 1466838546805,
+        "nodes": [
+          {
+            "name": "INTERNET",
+            "renderer": "focusedChild",
+            "class": "normal"
+          },
+          {
+            "name": "proxy-prod4",
+            "renderer": "focusedChild",
+            "class": "normal"
+          },
+          {
+            "name": "proxy-prod5",
+            "renderer": "focusedChild",
+            "class": "normal"
+          },
+          {
+            "name": "proxy-prod6",
+            "renderer": "focusedChild",
+            "class": "normal"
+          },
+          {
+            "name": "proxy-prod7",
+            "renderer": "focusedChild",
+            "class": "normal"
+          }
+        ],
+        "connections": [
+          {
+            "source": "INTERNET",
+            "target": "proxy-prod4",
+            "metrics": {
+              "danger": 26.524,
+              "normal": 15598.906
+            },
+            "class": "normal"
+          },
+          {
+            "source": "INTERNET",
+            "target": "proxy-prod5",
+            "metrics": {
+              "danger": 176.524,
+              "normal": 25598.906
+            },
+            "class": "normal"
+          },
+          {
+            "source": "INTERNET",
+            "target": "proxy-prod6",
+            "metrics": {
+              "danger": 186.524,
+              "normal": 28598.906
+            },
+            "class": "normal"
+          },
+          {
+            "source": "INTERNET",
+            "target": "proxy-prod7",
+            "metrics": {
+              "danger": 196.524,
+              "normal": 26598.906
+            },
+            "class": "normal"
+          }
+  
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "source": "INTERNET",
+        "target": "us-east-2",
+        "metrics": {
+          "normal": 26037.626,
+          "danger": 92.37
+        },
+        "notices": [
+        ],
+        "class": "normal"
+      }
+    ]
+  }
